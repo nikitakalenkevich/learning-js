@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Basic css page</title>
-        <link rel="stylesheet" href="./style.css" type="text/css"/>
-    </head>
-    <style>
-        /* div {
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic css page</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<style>
+    /* div {
             width: 100px;
             height: 100px;
             background-color: blue;
             margin: 3px;
         } */
 
-        #second_div {
-            background-color: green;
-        }
+    #second_div {
+        background-color: green;
+    }
 
-        span {
-            width: 100px;
-            height: 100px;
-            background-color: red; 
-            margin: 3px;
-        }
+    span {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 3px;
+    }
 
-        .colored-box {
-            display: block;
-            width: 100px;
-            height: 100px;
-            background-color: purple;
-            margin: 3px;
-        }
+    .colored-box {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        margin: 3px;
+    }
 
-        .color-red {
-            background-color: red;
-        }
+    .color-red {
+        background-color: red;
+    }
 
-        .green-red {
-            background-color: green;
-        }
+    .green-red {
+        background-color: green;
+    }
 
-        span.colored-box#first_span {
-            width: 300px;
-        }
+    span.colored-box#first_span {
+        width: 300px;
+    }
 
-        .parent-box {
-            width: 200px;
-            border: 1px solid red;
-            margin: 5px;
-        }
-        
-        .parent-box2 {
-            width: 200px;
-            border: 1px solid black;
-            margin: 5px;
-        }
+    .parent-box {
+        width: 200px;
+        border: 1px solid red;
+        margin: 5px;
+    }
 
-        .child-box {
-            margin: 5px;
-            width: 50px;
-            height: 50px;
-            border: 1px solid black;
-        }
+    .parent-box2 {
+        width: 200px;
+        border: 1px solid black;
+        margin: 5px;
+    }
 
-        .child-child-box {
-            margin: 5px;
-            width: 10px;
-            height: 10px;
-            background-color: grey;
-        }
+    .child-box {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+    }
 
-        .parent-box .child-box .child-child-box:first-child {
-            background-color: gold;
-        }
+    .child-child-box {
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: grey;
+    }
 
-        .parent-box .child-box .child-child-box:first-child {
-            background-color: gold;
-        }
+    .parent-box .child-box .child-child-box:first-child {
+        background-color: gold;
+    }
 
-        .parent-box .child-box .child-child-box:last-child {
-            background-color: fuchsia;
-        }
+    .parent-box .child-box .child-child-box:first-child {
+        background-color: gold;
+    }
 
-        .parent-box .child-box .child-child-box:nth-child(2) {
-            background-color: turquoise;
-        }
+    .parent-box .child-box .child-child-box:last-child {
+        background-color: fuchsia;
+    }
 
-        .parent-box .child-box {
-            border: 1px solid brown;
-        }
+    .parent-box .child-box .child-child-box:nth-child(2) {
+        background-color: turquoise;
+    }
 
-        /*
+    .parent-box .child-box {
+        border: 1px solid brown;
+    }
+
+    /*
             language preffered:
             word1_word2 // <- snake_case
             word1Word2  // <- camelCase
@@ -103,36 +104,38 @@
             do not use:
             word1word2 // <- please do not use this one!
         */
-    </style>
-    <body>
-        <a href="./index.html">Home page</a>
-        <div class="colored-box"></div>
+</style>
 
-        <div class="parent-box">
-            <div class="child-box">
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-            </div>
-            <div class="child-box">
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-                <div class="child-child-box"></div>
-            </div>
-            <div class="child-box"></div>
+<body>
+    <a href="./index.html">Home page</a>
+    <div class="colored-box"></div>
+
+    <div class="parent-box">
+        <div class="child-box">
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
         </div>
-
-        <div class="parent-box2">
-            <div class="child-box"></div>
-            <div class="child-box"></div>
-            <div class="child-box"></div>
+        <div class="child-box">
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
+            <div class="child-child-box"></div>
         </div>
+        <div class="child-box"></div>
+    </div>
 
-        <div id="second_div" class="colored-box color-red"></div>
-        <div></div>
-        <span id="first_span" class="colored-box"></span>
-        <i class="colored-box color-red"></i>
-    </body>
+    <div class="parent-box2">
+        <div class="child-box"></div>
+        <div class="child-box"></div>
+        <div class="child-box"></div>
+    </div>
+
+    <div id="second_div" class="colored-box color-red"></div>
+    <div></div>
+    <span id="first_span" class="colored-box"></span>
+    <i class="colored-box color-red"></i>
+</body>
+
 </html>
