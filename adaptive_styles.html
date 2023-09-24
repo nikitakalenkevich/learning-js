@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adaptive styles</title>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+    </head>
+    <style>
+        .form {
+            border: 1px solid;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-input-parent {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 7px;
+        }
+    </style>
+    <body>
+        <a href="./index.html">Home page</a>
+        <div class="form">
+            <div class="form-input-parent">
+                <label>Name:</label>
+                <input class="form-input"/>
+            </div>
+            <div class="form-input-parent">
+                <label>Phone:</label>
+                <input class="form-input"/>
+            </div>
+            <div class="form-input-parent">
+                <label>Address:</label>
+                <input class="form-input"/>
+            </div>
+            <button>Save</button>
+        </div>
+    </body>
+</html>
