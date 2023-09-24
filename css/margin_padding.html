@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css positions</title>
+</head>
+<style>
+    .block {
+        width: 200px;
+        height: 100px;
+        border: 1px solid;
+    }
+
+    .padding {
+        padding: 5px;
+        /*  box-sizing: border-box; - не даеь раздуваться контейнеру со стилем padding! */
+    }
+
+    .margin {
+        margin: 5px; /* all: top, right, bottom, left */
+        margin: 5px 5px; /* top/bottom, left/right */
+        margin: 5px 5px 5px; /* top, left/right, bottom */
+        margin: 5px 5px 5px 5px; /* top, right, bottom, left */
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <a href="./index.html">Home page</a>
+    <div class="block margin">
+        margin
+    </div>
+    <div class="block padding">
+        padding
+    </div>
+    <div class="block margin padding">
+        margin padding
+    </div>
+</body>
+
+</html>
