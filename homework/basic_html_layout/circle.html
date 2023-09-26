@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .parent {
+            width: 440px;
+            margin-top: 50px;
+        }
+
+        .line {
+            display: inline-block;
+            position: relative;
+            width: 370px;
+            height: 4px;
+            background-color: rgb(161, 161, 161);
+            bottom: 30px;
+            left: auto;
+            z-index: 1;
+        }
+
+        .circle {
+            position: relative;
+            display: inline-block;
+            border-radius: 110%;
+            width: 42px;
+            height: 40px;
+            text-align: center;
+            padding-top: 1px;
+            margin-right: 38px;
+            z-index: 2;
+        }
+
+        .green {
+            background-color: rgb(109, 255, 60);
+            color: white;
+        }
+
+        .purple {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .gray {
+            background-color: rgb(168, 168, 168);
+            color: white;
+        }
+
+
+
+        .head {
+            text-align: center;
+            position: fixed;
+            top: 10px;
+            left: 100px;
+            font-size: 25px;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+
+    <div class="parent">
+        <div class="circle green"><a href="https://www.w3schools.com/html/">1</a></div>
+        <div class="circle green"><a href="https://htmlbook.ru/practical
+            ">2</a></div>
+        <div class="circle green"><a href="https://learn.javascript.ru/css-for-js">3</a></div>
+        <div class="circle purple"><a href="https://www.markdownguide.org/getting-started/">4</a></div>
+        <div class="circle gray"><a href="https://github.com/nikitakalenkevich/learning-js
+            ">5</a></div>
+        <div class="line"></div>
+    </div>
+    <div class=" block head">Этап обучения:</div>
+</body>
+
+</html>
