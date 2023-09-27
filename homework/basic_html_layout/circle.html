@@ -10,32 +10,27 @@
 
 <body>
     <style>
-        .parent {
+        .stepper {
             width: 440px;
-            margin-top: 50px;
+            margin-top: 10px;
         }
 
         .line {
-            display: inline-block;
-            position: relative;
-            width: 370px;
-            height: 4px;
+            top:18px;
+            position: absolute;
+            height:4px;
+            width:100%;
             background-color: rgb(161, 161, 161);
-            bottom: 30px;
-            left: auto;
-            z-index: 1;
         }
 
         .circle {
             position: relative;
             display: inline-block;
-            border-radius: 110%;
-            width: 42px;
+            border-radius: 50%;
+            width: 40px;
             height: 40px;
             text-align: center;
-            padding-top: 1px;
-            margin-right: 38px;
-            z-index: 2;
+            line-height: 38px;
         }
 
         .green {
@@ -53,32 +48,58 @@
             color: white;
         }
 
-
-
-        .head {
+        .stepper-label{
             text-align: center;
-            position: fixed;
-            top: 10px;
-            left: 100px;
             font-size: 25px;
         }
 
         a {
             color: white;
         }
+        
+        .circle-wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .stepper-content{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
-
-    <div class="parent">
-        <div class="circle green"><a href="https://www.w3schools.com/html/">1</a></div>
-        <div class="circle green"><a href="https://htmlbook.ru/practical
-            ">2</a></div>
-        <div class="circle green"><a href="https://learn.javascript.ru/css-for-js">3</a></div>
-        <div class="circle purple"><a href="https://www.markdownguide.org/getting-started/">4</a></div>
-        <div class="circle gray"><a href="https://github.com/nikitakalenkevich/learning-js
-            ">5</a></div>
-        <div class="line"></div>
+    <div class="stepper">
+        <div class="stepper-label">Этап обучения:</div>
+        <div class="stepper-content">
+            <div class="line">
+            </div>
+            <div class="circle-wrapper">
+            
+                <div class="circle green">
+                    <a href="https://www.w3schools.com/html/">1</a>
+                </div>
+                <div class="circle green">
+                    <a href="https://www.w3schools.com/html/">1</a>
+                </div>
+                <div class="circle green">
+                    <a href="https://www.w3schools.com/html/">1</a>
+                </div>
+                <div class="circle green">
+                    <a href="https://htmlbook.ru/practical">2</a>
+                </div>
+                <div class="circle green">
+                    <a href="https://learn.javascript.ru/css-for-js">3</a>
+                </div>
+                <div class="circle purple">
+                    <a href="https://www.markdownguide.org/getting-started/">4</a>
+                </div>
+                <div class="circle gray">
+                    <a href="https://github.com/nikitakalenkevich/learning-js">5</a>
+                </div>
+        
+            </div>
+        </div>
     </div>
-    <div class=" block head">Этап обучения:</div>
+    
 </body>
 
 </html>
