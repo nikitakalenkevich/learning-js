@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    .flex-parent {
+        display: flex;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    .justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    .justify-content-space-evenly {
+        justify-content: space-evenly;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .align-items-end {
+        align-items: flex-end;
+    }
+
+    .flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-child {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+    <div>Flex row</div>
+    <div class="flex-parent flex-row">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex row reverse</div>
+    <div class="flex-parent flex-row-reverse">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex column</div>
+    <div class="flex-parent flex-column">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex column reverse</div>
+    <div class="flex-parent flex-column-reverse">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex row justify-content-center</div>
+    <div class="flex-parent flex-row justify-content-center">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex row justify-content-space-between</div>
+    <div class="flex-parent flex-row justify-content-space-between">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex row justify-content-space-around</div>
+    <div class="flex-parent flex-row justify-content-space-around">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex row justify-content-space-evenly</div>
+    <div class="flex-parent flex-row justify-content-space-evenly">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <!---->
+
+    <div>Flex column align-items-center</div>
+    <div class="flex-parent flex-column align-items-center">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+
+    <div>Flex column align-items-end</div>
+    <div class="flex-parent flex-column align-items-end">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+    </div>
+</body>
+</html>
