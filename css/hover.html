@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover, focus and etc.</title>
+</head>
+<style>
+   .element {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s, height 1s;
+   }
+
+   .element:hover {
+        background-color: blue;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+   }
+
+   .element:focus {
+        background-color: pink;
+   }
+
+   button:hover {
+    background-color: green;
+   }
+
+   /* button:active {
+    background-color: yellow;
+   }
+   a:visited {
+    color: brown;
+   } */
+</style>
+
+<body>
+    <div class="element" tabindex="0"></div>
+
+    <input class="input1" type="text"/>
+    <br/>
+    <input type="text"/>
+    <br/>
+    <input type="text"/>
+    <br/>
+    <input type="text"/>
+    <br/>
+    <input type="checkbox"/>
+    <br/>
+    <button>
+        Button
+    </button>
+    <a href="/index.html">Link</a>
+</body>
+
+</html>
