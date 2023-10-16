@@ -8,10 +8,7 @@
     <title>Feedback</title>
 </head>
 <style>
-    .parag1 {
-        padding: 0;
-        margin-left: 40px;
-    }
+
 </style>
 
 <body>
@@ -31,12 +28,10 @@
             <label for="password">Password:</label>
             <input type="password" name="password"><br>
         </li>
-    </ul>
-    <ul>
         <li>
             Please check all the emotions that apply to you:
         </li>
-        <div class="parag1">
+        <ul>
             <li><input type="checkbox" name="emotionAngry" value="angry">
                 <label for="emotionAngry"> Angry </label><br>
             </li>
@@ -49,12 +44,9 @@
             <li> <input type="checkbox" name="emotionAmbivalent" value="Ambivalent">
                 <label for="emotionAmbivalent"> Ambivalent </label><br>
             </li>
-        </div>
-    </ul>
-
-    <ul>
+        </ul>
         <li>How satisfied were you with our service?</li>
-        <div class="parag1">
+        <ul>
             <li> <input type="radio" name="vsatisfied" value="Vsatisfied">
                 <label for="vsatisfied">Very satisfied</label><br>
             </li>
@@ -73,8 +65,9 @@
 
             <li><input type="radio" name="vdissatisfied" value="vdissatisfied">
                 <label for="vdissatisfied">Very Dissatisfied</label><br>
-        </li>
-    </div>
+            </li>
+        </ul>
+    </ul>
     </ul>
     <ul>
         <li>
@@ -95,7 +88,7 @@
             <select name="location">
                 <option value="location" disable selected hidden>Select location</option>
                 <option value="location">Belarus</option>
-                <option value="location">Poland</option>               
+                <option value="location">Poland</option>
                 <option value="location">Germany</option>
             </select>
         </li>
