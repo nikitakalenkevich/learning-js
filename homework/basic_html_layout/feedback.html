@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+
+<body>
+    <h1>My feedback form</h1>
+    <ul>
+        <li>
+            <label>
+                Name:
+                <input type="text" placeholder="Enter your name" />
+            </label>
+        </li>
+        <li>
+            <label>
+                Email:
+                <input type="email" placeholder="Enter your e-mail" />
+            </label>
+        </li>
+        <li>
+            <label>
+                Password:
+                <input type="password" placeholder="Enter your password" />
+            </label>
+        </li>
+        <li>
+            Please check all the emotions that apply to you:
+        </li>
+        <ul>
+            <li>
+                <label>
+                    Angry
+                    <input type="checkbox" value="Angry">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Sad
+                    <input type="checkbox" value="Sad">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Happy
+                    <input type="checkbox" value="Happy">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Ambivalent
+                    <input type="checkbox" value="Ambivalent">
+                </label>
+            </li>
+        </ul>
+        <li>How satisfied were you with our service?</li>
+        <ul>
+            <li>
+                <label>
+                    Very Satisfied
+                    <input type="radio" value="Very Satisfied">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Satisfied
+                    <input type="radio" value="Satisfied">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Didn't care
+                    <input type="radio" value="Didn't care">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Dissatisfied
+                    <input type="radio" value="Dissatisfied">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Very Dissatisfied
+                    <input type="radio" value="Very Dissatisfied">
+                </label>
+            </li>
+        </ul>
+    </ul>
+    </ul>
+    <ul>
+        <li>
+            Further comments
+            <textarea name="Comments" id="Comments" cols="20" rows="5" placeholder="Enter your comments"></textarea>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <label>
+                Bio photo:
+                <input type="file">
+            </label>
+        </li>
+        <li>
+            <label>Location Visited:</label>
+            <select name="location">
+                <option disable selected hidden>Select location</option>
+                <option>Belarus</option>
+                <option>Poland</option>
+                <option>Germany</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <button type="submit">Submit</button>
+        </li>
+    </ul>
+</body>
+
+</html>
